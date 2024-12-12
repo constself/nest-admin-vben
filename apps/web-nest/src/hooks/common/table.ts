@@ -1,5 +1,6 @@
-import type { AntDesign } from '@vben/types';
 import type { TableRowSelection } from 'ant-design-vue/es/table/interface';
+
+import type { AntDesign } from '#/typings/antd';
 
 import {
   computed,

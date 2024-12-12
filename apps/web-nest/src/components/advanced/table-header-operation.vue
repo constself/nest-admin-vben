@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { AntDesign } from '@vben/types';
+import type { AntDesign } from '#/typings/antd';
 
 import {
   IconIcRoundDelete,

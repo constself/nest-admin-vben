@@ -1,5 +1,5 @@
 <script setup lang="ts" generic="T extends Record<string, unknown>, K = never">
-import type { AntDesign } from '@vben/types';
+import type { AntDesign } from '#/typings/antd';
 
 import { VueDraggable } from 'vue-draggable-plus';
 
