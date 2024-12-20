@@ -5022,8 +5022,8 @@ packages:
     resolution: {integrity: sha512-y+CcFFwelSXpLZk/7fMB2mUbGtX9lKycf1MWJ7CaTIERyitVlyQx6C+sxcROU2BAJ24OiZyK+8wj2i8AlBoS3A==}
     engines: {node: '>=10'}
 
-  array-buffer-byte-length@1.0.1:
-    resolution: {integrity: sha512-ahC5W1xgou+KTXix4sAO8Ki12Q+jf4i0+tmk3sC+zgcynshkHxzpXdImBehiUYKKKDwvfFiJl1tZt6ewscS1Mg==}
+  array-buffer-byte-length@1.0.2:
+    resolution: {integrity: sha512-LHE+8BuR7RYGDKvnrmcuSq3tDcKv9OFEXQt/HpbZhY7V6h0zlUXutnAD82GiFx9rdieCMjkvtcsPqBwgUl1Iiw==}
     engines: {node: '>= 0.4'}
 
   array-differ@3.0.0:
@@ -5495,6 +5495,10 @@ packages:
     resolution: {integrity: sha512-I5qxpzLv+sJhTVEoLYNcTW+bThDCPsit0vLNKShZx6rLtpilNpmmeTPaeqJb9ZE9dV3DGaeby6Vuhrw38WjeyQ==}
     engines: {node: ^14.18.0 || >=16.10.0}
 
+  consola@3.3.0:
+    resolution: {integrity: sha512-kxltocVQCwQNFvw40dlVRYeAkAvtYjMFZYNlOcsF5wExPpGwPxMwgx4IfDJvBRPtBpnQwItd5WkTaR0ZwT/TmQ==}
+    engines: {node: ^14.18.0 || >=16.10.0}
+
   console-control-strings@1.1.0:
     resolution: {integrity: sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==}
 
@@ -5718,12 +5722,12 @@ packages:
     resolution: {integrity: sha512-wAV9QHOsNbwnWdNW2FYvE1P56wtgSbM+3SZcdGiWQILwVjACCXDCI3Ai8QlCjMDB8YK5zySiXZYBiwGmNY3lnw==}
     engines: {node: '>=12'}
 
-  data-view-buffer@1.0.1:
-    resolution: {integrity: sha512-0lht7OugA5x3iJLOWFhWK/5ehONdprk0ISXqVFn/NFrDu+cuc8iADFrGQz5BnRK7LLU3JmkbXSxaqX+/mXYtUA==}
+  data-view-buffer@1.0.2:
+    resolution: {integrity: sha512-EmKO5V3OLXh1rtK2wgXRansaK1/mtVdTUEiEI0W8RkvgT05kfxaH29PliLnpLP73yYO6142Q72QNa8Wx/A5CqQ==}
     engines: {node: '>= 0.4'}
 
-  data-view-byte-length@1.0.1:
-    resolution: {integrity: sha512-4J7wRJD3ABAzr8wP+OcIcqq2dlUKp4DVflx++hs5h5ZKydWMI6/D/fAot+yh6g2tHh8fLFTvNOaVN357NvSrOQ==}
+  data-view-byte-length@1.0.2:
+    resolution: {integrity: sha512-tuhGbE6CfTM9+5ANGf+oQb72Ky/0+s3xKUpHvShfiz2RxMFgFPjsXuRLBVMtvMs15awe45SRb83D6wH4ew6wlQ==}
     engines: {node: '>= 0.4'}
 
   data-view-byte-offset@1.0.1:
@@ -6583,8 +6587,8 @@ packages:
   function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
 
-  function.prototype.name@1.1.7:
-    resolution: {integrity: sha512-2g4x+HqTJKM9zcJqBSpjoRmdcPFtJM60J3xJisTQSXBWka5XqyBN/2tNUgma1mztTXyDuUsEtYe5qcs7xYzYQA==}
+  function.prototype.name@1.1.8:
+    resolution: {integrity: sha512-e5iwyodOHhbMr/yNrc7fDYG4qlbIvI5gajyzPnb5TCwyhjApznQh1BMFou9b30SevY43gCJKXycoCBjMbsuW0Q==}
     engines: {node: '>= 0.4'}
 
   functions-have-names@1.2.3:
@@ -9005,12 +9009,13 @@ packages:
     resolution: {integrity: sha512-OcXjMsGdhL4XnbShKpAcSqPMzQoYkYyhbEaeSko47MjRP9NfEQMhZkXL1DoFlt9LWQn4YttrdnV6X2OiyzBi+A==}
     engines: {node: '>=10'}
 
-  resolve@1.22.8:
-    resolution: {integrity: sha512-oKWePCxqpd6FlLvGV1VU0x7bkPmmCNolxzjMf4NczoDnQcIWrAF+cPtZn5i6n+RfD2d9i0tzpKnG6Yk168yIyw==}
+  resolve@1.22.10:
+    resolution: {integrity: sha512-NPRy+/ncIMeDlTAsuqwKIiferiawhefFJtkNSW0qZJEqMEb+qBt/77B/jGeeek+F0uOeN05CDa6HXbbIgtVX4w==}
+    engines: {node: '>= 0.4'}
     hasBin: true
 
-  resolve@1.22.9:
-    resolution: {integrity: sha512-QxrmX1DzraFIi9PxdG5VkRfRwIgjwyud+z/iBwfRRrVmHc+P9Q7u2lSSpQ6bjr2gy5lrqIiU9vb6iAeGf2400A==}
+  resolve@1.22.8:
+    resolution: {integrity: sha512-oKWePCxqpd6FlLvGV1VU0x7bkPmmCNolxzjMf4NczoDnQcIWrAF+cPtZn5i6n+RfD2d9i0tzpKnG6Yk168yIyw==}
     hasBin: true
 
   restore-cursor@5.1.0:
@@ -9374,8 +9379,8 @@ packages:
     resolution: {integrity: sha512-tsaTIkKW9b4N+AEj+SVA+WhJzV7/zMhcSu78mLKWSk7cXMOSHsBKFWUs0fWwq8QyK3MgJBQRX6Gbi4kYbdvGkQ==}
     engines: {node: '>=18'}
 
-  string.prototype.matchall@4.0.11:
-    resolution: {integrity: sha512-NUdh0aDavY2og7IbBPenWqR9exH+E26Sv8e0/eTe1tltDGZL+GtBkDAnnyBtmekfK6/Dq3MkcGtzXFEd1LQrtg==}
+  string.prototype.matchall@4.0.12:
+    resolution: {integrity: sha512-6CC9uyBL+/48dYizRf7H7VAYCMCNTBeM78x/VTUe9bFEaxBepPJDa1Ow99LqI/1yF7kuy7Q3cQsYMrcjGUcskA==}
     engines: {node: '>= 0.4'}
 
   string.prototype.trim@1.2.10:
@@ -10771,7 +10776,7 @@ snapshots:
       '@babel/helper-plugin-utils': 7.25.9
       debug: 4.4.0(supports-color@9.4.0)
       lodash.debounce: 4.0.8
-      resolve: 1.22.9
+      resolve: 1.22.10
     transitivePeerDependencies:
       - supports-color
 
@@ -12688,7 +12693,7 @@ snapshots:
       '@rushstack/ts-command-line': 4.22.6(@types/node@22.10.2)
       lodash: 4.17.21
       minimatch: 3.0.8
-      resolve: 1.22.9
+      resolve: 1.22.10
       semver: 7.5.4
       source-map: 0.6.1
       typescript: 5.4.2
@@ -12700,7 +12705,7 @@ snapshots:
       '@microsoft/tsdoc': 0.15.1
       ajv: 8.12.0
       jju: 1.4.0
-      resolve: 1.22.9
+      resolve: 1.22.10
 
   '@microsoft/tsdoc@0.15.1': {}
 
@@ -12819,7 +12824,7 @@ snapshots:
     dependencies:
       '@nuxt/schema': 3.14.1592(magicast@0.3.5)(rollup@4.28.1)
       c12: 2.0.1(magicast@0.3.5)
-      consola: 3.2.3
+      consola: 3.3.0
       defu: 6.1.4
       destr: 2.0.3
       globby: 14.0.2
@@ -12846,7 +12851,7 @@ snapshots:
     dependencies:
       c12: 2.0.1(magicast@0.3.5)
       compatx: 0.1.8
-      consola: 3.2.3
+      consola: 3.3.0
       defu: 6.1.4
       hookable: 5.5.3
       pathe: 1.1.2
@@ -13057,7 +13062,7 @@ snapshots:
       '@types/resolve': 1.20.2
       deepmerge: 4.3.1
       is-module: 1.0.0
-      resolve: 1.22.9
+      resolve: 1.22.10
     optionalDependencies:
       rollup: 4.28.0
 
@@ -13067,7 +13072,7 @@ snapshots:
       '@types/resolve': 1.20.2
       deepmerge: 4.3.1
       is-module: 1.0.0
-      resolve: 1.22.9
+      resolve: 1.22.10
     optionalDependencies:
       rollup: 2.79.2
 
@@ -13077,7 +13082,7 @@ snapshots:
       '@types/resolve': 1.20.2
       deepmerge: 4.3.1
       is-module: 1.0.0
-      resolve: 1.22.9
+      resolve: 1.22.10
     optionalDependencies:
       rollup: 4.28.1
 
@@ -13288,14 +13293,14 @@ snapshots:
       fs-extra: 7.0.1
       import-lazy: 4.0.0
       jju: 1.4.0
-      resolve: 1.22.9
+      resolve: 1.22.10
       semver: 7.5.4
     optionalDependencies:
       '@types/node': 22.10.2
 
   '@rushstack/rig-package@0.5.3':
     dependencies:
-      resolve: 1.22.9
+      resolve: 1.22.10
       strip-json-comments: 3.1.1
 
   '@rushstack/terminal@0.14.0(@types/node@22.10.2)':
@@ -13372,7 +13377,7 @@ snapshots:
       ejs: 3.1.10
       json5: 2.2.3
       magic-string: 0.25.9
-      string.prototype.matchall: 4.0.11
+      string.prototype.matchall: 4.0.12
 
   '@swc/helpers@0.5.15':
     dependencies:
@@ -14252,9 +14257,9 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  array-buffer-byte-length@1.0.1:
+  array-buffer-byte-length@1.0.2:
     dependencies:
-      call-bind: 1.0.8
+      call-bound: 1.0.3
       is-array-buffer: 3.0.5
 
   array-differ@3.0.0: {}
@@ -14269,7 +14274,7 @@ snapshots:
 
   arraybuffer.prototype.slice@1.0.4:
     dependencies:
-      array-buffer-byte-length: 1.0.1
+      array-buffer-byte-length: 1.0.2
       call-bind: 1.0.8
       define-properties: 1.2.1
       es-abstract: 1.23.6
@@ -14608,7 +14613,7 @@ snapshots:
 
   citty@0.1.6:
     dependencies:
-      consola: 3.2.3
+      consola: 3.3.0
 
   class-variance-authority@0.7.1:
     dependencies:
@@ -14762,6 +14767,8 @@ snapshots:
   consola@2.15.3: {}
 
   consola@3.2.3: {}
+
+  consola@3.3.0: {}
 
   console-control-strings@1.1.0: {}
 
@@ -15053,15 +15060,15 @@ snapshots:
 
   dargs@8.1.0: {}
 
-  data-view-buffer@1.0.1:
+  data-view-buffer@1.0.2:
     dependencies:
-      call-bind: 1.0.8
+      call-bound: 1.0.3
       es-errors: 1.3.0
       is-data-view: 1.0.2
 
-  data-view-byte-length@1.0.1:
+  data-view-byte-length@1.0.2:
     dependencies:
-      call-bind: 1.0.8
+      call-bound: 1.0.3
       es-errors: 1.3.0
       is-data-view: 1.0.2
 
@@ -15358,20 +15365,20 @@ snapshots:
 
   es-abstract@1.23.6:
     dependencies:
-      array-buffer-byte-length: 1.0.1
+      array-buffer-byte-length: 1.0.2
       arraybuffer.prototype.slice: 1.0.4
       available-typed-arrays: 1.0.7
       call-bind: 1.0.8
       call-bound: 1.0.3
-      data-view-buffer: 1.0.1
-      data-view-byte-length: 1.0.1
+      data-view-buffer: 1.0.2
+      data-view-byte-length: 1.0.2
       data-view-byte-offset: 1.0.1
       es-define-property: 1.0.1
       es-errors: 1.3.0
       es-object-atoms: 1.0.0
       es-set-tostringtag: 2.0.3
       es-to-primitive: 1.3.0
-      function.prototype.name: 1.1.7
+      function.prototype.name: 1.1.8
       get-intrinsic: 1.2.6
       get-symbol-description: 1.1.0
       globalthis: 1.0.4
@@ -15523,7 +15530,7 @@ snapshots:
     dependencies:
       debug: 3.2.7
       is-core-module: 2.16.0
-      resolve: 1.22.9
+      resolve: 1.22.10
     transitivePeerDependencies:
       - supports-color
 
@@ -16064,9 +16071,10 @@ snapshots:
 
   function-bind@1.1.2: {}
 
-  function.prototype.name@1.1.7:
+  function.prototype.name@1.1.8:
     dependencies:
       call-bind: 1.0.8
+      call-bound: 1.0.3
       define-properties: 1.2.1
       functions-have-names: 1.2.3
       hasown: 2.0.2
@@ -16135,7 +16143,7 @@ snapshots:
   giget@1.2.3:
     dependencies:
       citty: 0.1.6
-      consola: 3.2.3
+      consola: 3.3.0
       defu: 6.1.4
       node-fetch-native: 1.6.4
       nypm: 0.3.12
@@ -17463,7 +17471,7 @@ snapshots:
   normalize-package-data@2.5.0:
     dependencies:
       hosted-git-info: 2.8.9
-      resolve: 1.22.9
+      resolve: 1.22.10
       semver: 5.7.2
       validate-npm-package-license: 3.0.4
 
@@ -17509,7 +17517,7 @@ snapshots:
   nypm@0.3.12:
     dependencies:
       citty: 0.1.6
-      consola: 3.2.3
+      consola: 3.3.0
       execa: 8.0.1
       pathe: 1.1.2
       pkg-types: 1.2.1
@@ -17598,7 +17606,7 @@ snapshots:
 
   ora@8.1.1:
     dependencies:
-      chalk: 5.3.0
+      chalk: 5.4.0
       cli-cursor: 5.0.0
       cli-spinners: 2.9.2
       is-interactive: 2.0.0
@@ -17956,7 +17964,7 @@ snapshots:
       postcss: 8.4.49
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
-      resolve: 1.22.9
+      resolve: 1.22.10
 
   postcss-import@16.1.0(postcss@8.4.49):
     dependencies:
@@ -18546,15 +18554,15 @@ snapshots:
 
   resolve.exports@2.0.3: {}
 
-  resolve@1.22.8:
+  resolve@1.22.10:
     dependencies:
-      is-core-module: 2.15.1
+      is-core-module: 2.16.0
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
 
-  resolve@1.22.9:
+  resolve@1.22.8:
     dependencies:
-      is-core-module: 2.16.0
+      is-core-module: 2.15.1
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
 
@@ -18995,9 +19003,10 @@ snapshots:
       get-east-asian-width: 1.3.0
       strip-ansi: 7.1.0
 
-  string.prototype.matchall@4.0.11:
+  string.prototype.matchall@4.0.12:
     dependencies:
       call-bind: 1.0.8
+      call-bound: 1.0.3
       define-properties: 1.2.1
       es-abstract: 1.23.6
       es-errors: 1.3.0
@@ -19497,7 +19506,7 @@ snapshots:
       '@rollup/plugin-replace': 6.0.2(rollup@4.28.1)
       '@rollup/pluginutils': 5.1.4(rollup@4.28.1)
       citty: 0.1.6
-      consola: 3.2.3
+      consola: 3.3.0
       defu: 6.1.4
       esbuild: 0.24.0
       hookable: 5.5.3
@@ -19656,7 +19665,7 @@ snapshots:
   untun@0.1.3:
     dependencies:
       citty: 0.1.6
-      consola: 3.2.3
+      consola: 3.3.0
       pathe: 1.1.2
 
   untyped@1.5.1:
@@ -20152,7 +20161,7 @@ snapshots:
   which-builtin-type@1.2.1:
     dependencies:
       call-bound: 1.0.3
-      function.prototype.name: 1.1.7
+      function.prototype.name: 1.1.8
       has-tostringtag: 1.0.2
       is-async-function: 2.0.0
       is-date-object: 1.1.0
