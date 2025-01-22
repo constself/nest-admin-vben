@@ -1,20 +1,20 @@
 <!-- eslint-disable no-use-before-define -->
 <script lang="tsx" setup>
-import { watchEffect } from 'vue';
+import type { Api } from '#/typings/api';
 
-import { Page } from '@vben/common-ui';
-import { formatDateTime } from '@vben/utils';
-import { VbenAvatar } from '@vben-core/shadcn-ui';
-
-import { Button, Card, Popconfirm, Space, Table, Tag } from 'ant-design-vue';
-
-import { getSystemUsersApi } from '#/api';
+import { getSystemUsersListApi } from '#/api';
 import TableHeaderOperation from '#/components/advanced/table-header-operation.vue';
+import { enableStatusRecord } from '#/constants';
 import {
   useTable,
   useTableOperate,
   useTableScroll,
 } from '#/hooks/common/table';
+import { Page } from '@vben/common-ui';
+import { formatDateTime } from '@vben/utils';
+import { VbenAvatar } from '@vben-core/shadcn-ui';
+import { Button, Card, Popconfirm, Space, Table, Tag } from 'ant-design-vue';
+import { watchEffect } from 'vue';
 
 import UserOperateDrawer from './modules/user-operate-drawer.vue';
 import Usersearch from './modules/user-search.vue';
@@ -32,7 +32,7 @@ const {
   resetSearchParams,
   originalData,
 } = useTable({
-  apiFn: getSystemUsersApi,
+  apiFn: getSystemUsersListApi,
   apiParams: {
     current: 1,
     pageSize: 10,
@@ -126,13 +126,19 @@ const {
       title: '状态',
       align: 'center',
       width: 100,
-      customRender: ({ record }: any) => {
-        const isEnable = Math.trunc(record.status) === 1;
-        return (
-          <Tag color={isEnable ? 'success' : 'red'}>
-            {isEnable ? '启用' : '禁用'}
-          </Tag>
-        );
+      customRender: ({ text }: { text: Api.Common.EnableStatus }) => {
+        if (text === null) {
+          return null;
+        }
+
+        const tagMap: Record<Api.Common.EnableStatus, string> = {
+          1: 'success',
+          0: 'warning',
+        };
+
+        const label = enableStatusRecord[text];
+
+        return <Tag color={tagMap[text]}>{label}</Tag>;
       },
     },
     {

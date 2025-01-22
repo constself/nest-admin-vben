@@ -1,5 +1,4 @@
 import type { Pinia } from 'pinia';
-
 import type { App } from 'vue';
 
 import { createPinia } from 'pinia';

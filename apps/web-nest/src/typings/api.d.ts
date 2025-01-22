@@ -25,14 +25,15 @@ export declare namespace Api {
       Common.PaginatingCommonParams,
       'current' | 'size'
     >;
+    /**
+     * enable status
+     *
+     * - "1": enabled
+     * - "0": disabled
+     */
+    type EnableStatus = '0' | '1';
   }
   namespace User {
-    /**
-     * 用户更新参数
-     */
-    type UserUpdateParams = {
-      id: number;
-    };
     /**
      * 用户更新 dto
      */
@@ -43,6 +44,8 @@ export declare namespace Api {
       deptId?: number;
       /** 邮箱 */
       email?: string;
+      /** 用户ID */
+      id: number;
       /** 呢称 */
       nickname?: string;
       /** 登录密码 */

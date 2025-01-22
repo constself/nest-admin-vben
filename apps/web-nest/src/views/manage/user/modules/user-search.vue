@@ -1,9 +1,17 @@
 <script setup lang="ts">
-import { IconIcRoundRefresh, IconIcRoundSearch } from '@vben/icons';
-
-import { Button, Card, Col, Form, FormItem, Input, Row } from 'ant-design-vue';
-
+import { enableStatusOptions } from '#/constants';
 import { useAntdForm } from '#/hooks/common/form';
+import { IconIcRoundRefresh, IconIcRoundSearch } from '@vben/icons';
+import {
+  Button,
+  Card,
+  Col,
+  Form,
+  FormItem,
+  Input,
+  Row,
+  Select,
+} from 'ant-design-vue';
 
 defineOptions({
   name: 'UserSearch',
@@ -18,6 +26,8 @@ const { formRef, validate, resetFields } = useAntdForm();
 const model = defineModel<{
   email: string; // 昵称
   nickname: string; // 昵称
+  status: number; // 用户状态
+  username: string; // 用户名
 }>('model', {
   required: true,
 });
@@ -29,6 +39,7 @@ async function reset() {
 
 async function search() {
   await validate();
+  // model.value.status && (model.value.status = Number(model.value.status));
   emit('search');
 }
 </script>
@@ -46,6 +57,11 @@ async function search() {
     >
       <Row :gutter="[16, 16]" wrap>
         <Col :lg="6" :md="12" :span="24">
+          <FormItem class="m-0" label="用户名" name="username">
+            <Input v-model:value="model.username" placeholder="请输入用户名" />
+          </FormItem>
+        </Col>
+        <Col :lg="6" :md="12" :span="24">
           <FormItem class="m-0" label="昵称" name="nickname">
             <Input v-model:value="model.nickname" placeholder="请输入昵称" />
           </FormItem>
@@ -53,6 +69,16 @@ async function search() {
         <Col :lg="6" :md="12" :span="24">
           <FormItem class="m-0" label="邮箱" name="email">
             <Input v-model:value="model.email" placeholder="请输入邮箱" />
+          </FormItem>
+        </Col>
+        <Col :lg="6" :md="12" :span="24">
+          <FormItem class="m-0" label="用户状态" name="status">
+            <Select
+              v-model:value="model.status"
+              :options="enableStatusOptions"
+              clearable
+              placeholder="请选择用户状态"
+            />
           </FormItem>
         </Col>
         <div class="flex-1">
